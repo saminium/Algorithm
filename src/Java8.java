@@ -10,10 +10,7 @@ public class Java8 {
 
         int[] ints = new int[]{5, 6, 7, 3, 9, 1, 2, 7, -698};
 
-        Map<Integer, Integer> m = new HashMap<>();
-
-
-        //find min
+         //find min
         IntStream.of(ints).min().ifPresent(System.out::println);
 
 
