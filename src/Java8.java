@@ -6,16 +6,15 @@ import java.util.stream.IntStream;
  */
 public class Java8 {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        int[] ints = new int[]{5,6,7,3,9,1,2,7, -698};
+        int[] ints = new int[]{5, 6, 7, 3, 9, 1, 2, 7, -698};
 
         Map<Integer, Integer> m = new HashMap<>();
 
 
         //find min
-       IntStream.of(ints).min().ifPresent(System.out::println);
-
+        IntStream.of(ints).min().ifPresent(System.out::println);
 
 
     }
